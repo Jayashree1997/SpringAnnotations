@@ -25,19 +25,11 @@ public class AppConfig {
     @Bean
     public Actor actorBean()
     {
-        Actor actor=new Actor("sdaf","male",40);
+        Actor actor=new Actor();
+        actor.setAge(20);
+        actor.setGender("female");
+        actor.setName("Mansi");
         return actor;
     }
-    @Bean
-    public Actor actorBean1()
-    {
-        Actor actor1=new Actor("mansi","female",100);
-        return actor1;
-    }
-    @Bean
-    public Actor actorBean2()
-    {
-        Actor actor2=new Actor("xyz","male",20);
-        return actor2;
-    }
+
 }
