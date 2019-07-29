@@ -1,13 +1,23 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Actor {
 
+    private String gender;
+    private int age;
+    private String name;
 
-    public void setName(String name) {
+    public Actor(String name, String gender, int age) {
         this.name = name;
+        this.gender = gender;
+        this.age = age;
     }
 
-    private String name;
+
+
 
     @Override
     public String toString() {
@@ -19,17 +29,8 @@ public class Actor {
     }
 
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
 
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    private String gender;
-    private int age;
 }
 
 
